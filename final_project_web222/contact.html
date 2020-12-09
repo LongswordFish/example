@@ -1,0 +1,169 @@
+<!--Student name: Jianchang (Robin) YU
+    student number: 160210191
+    student email: jyu205@myseneca.ca
+    date: 29th Nov. 2020-->
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>WEB222 Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style3.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+      </head>
+      <body>
+        <header>
+          <div id="logo">
+            <img id="myLogo" src="images/Logo.png" alt="logo">
+          </div>
+          <div id="shop-name">
+            <p>Longswordfish kitchenware shop gives you every perfect item suits your kitchen</p>
+          </div>
+          <div id="contactPage">
+            <a href="index.html">
+              <p>Home Page</p>
+            </a>
+          </div>
+        </header>
+        <main>
+            <div id="container_main">
+                <p style="font-size:20px; ">We value your feedback.</p>
+                <p style="font-size:16px; ">Please complete the form and help us improve our customer experience.</p>
+                <form id="formID" action="https://httpbin.org/post" method="POST">
+                        <label for="name">Name</label>
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            tabindex="1"
+                            maxlength="30"
+                        >
+
+                        <label for="email">Email Address</label>
+                        <input
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            type="email"
+                            tabindex="2"
+                        >
+
+                        <label for="address">Address</label>
+                        <input
+                            id="address"
+                            name="address"
+                            type="text"
+                            tabindex="3"
+                        >
+
+                        <label for="city">City</label>
+                        <input
+                            id="city"
+                            name="city"
+                            type="text"
+                            list="cities"
+                            tabindex="4"
+                        >
+                        <datalist id="cities">
+                            <option value="Totonto"></option>
+                            <option value="Edmonton"></option>
+                            <option value="Victoria"></option>
+                            <option value="Winnipeg"></option>
+                            <option value="Fredericton"></option>
+                            <option value="St. John's"></option>
+                            <option value="Halifax"></option>
+                            <option value="Charlottetown"></option>
+                            <option value="Quebec City"></option>
+                        </datalist>
+
+
+                        <label for="postalcode">Postal Code</label>
+                        <input
+                            id="postalcode"
+                            name="postalcode"
+                            type="text"
+                            tabindex="5"
+                            maxlength="7"
+                        >
+                        <p>Choose your option</p>
+                        <div>
+                            <label for="radiooption1">Question</label>
+                            <input
+                                id="radiooption1"
+                                name="radiooption"
+                                type="radio"
+                                value="question"
+                            >
+
+                            <label for="radiooption2">Comment</label>
+                            <input
+                                id="radiooption2"
+                                name="radiooption"
+                                type="radio"
+                                value="comment"
+                            >
+
+                            <label for="radiooption3">Order Problem</label>
+                            <input
+                                id="radiooption3"
+                                name="radiooption"
+                                type="radio"
+                                value="orderproblem"
+                            >  
+
+                            <input 
+                            id="odernumber"
+                            name="ordernumber"
+                            type="hidden"
+                            > 
+                        </div>  
+                        <textarea id="message" name="message" rows="4" tableindex="6" placeholder="Please tell us what you want to share with us"></textarea>
+                        <p></p>
+                        <div>
+                          <input class="form_button" type="submit" value="subscribe">
+                          <input class="form_button" type="reset" value="clear">
+                        </div>
+                </form>
+            </div>
+        </main>
+
+        <div id="block"></div>
+        <footer>
+          <div id="contact-us">
+            <p>Contact us</p>
+            <div id="contact-wrapper">
+              <img src="images/facebook-f-brands-white.svg" alt="" style="height:24px; width:24px;">
+              <img src="images/instagram-square-brands-white.svg" alt="" style="height:24px; width:24px;">
+              <img src="images/twitter-brands-white.svg" alt="" style="height:24px; width:24px;">
+            </div>
+          </div>
+          <div id="copy-right">
+            &#169 Jianchang (Robin) YU 
+          </div>
+          <div id="subscribe">
+            <form id="formID" action="https://formspree.io/f/mrgoanaq" method="POST">
+              <label for="_replyto">Enter your email to subsrible</label>
+              <input type="email" name="_replyto" id="_replyto">
+              </br>
+              <div id="button-wrapper">
+                <input type="submit" value="subscribe">
+                <input type="reset" value="clear">
+              </div>  
+            </form>
+         </div>
+        </footer>
+    
+        <script src="js/kitchenware_data.js"></script>
+        <script src="js/script.js"></script>
+      </body>
+    </html>
+    
+    
+    <!--Reference
+      All pictures are from unsplash.com/, Credit to the author
+      All icons are from material.io/resources/icons/?style=baseline -->
