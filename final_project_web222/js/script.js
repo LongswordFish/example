@@ -1,10 +1,3 @@
-/* Add any JavaScript you need to this file. */
-/* 
-    Student name: Jianchang (Robin) YU
-    student number: 160210191
-    student email: jyu205@myseneca.ca
-    date: 29th Nov. 2020
-*/
 
 window.onload = function() {
   //returns a CAD dollar from a cent number

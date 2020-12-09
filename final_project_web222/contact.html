@@ -1,8 +1,3 @@
-<!--Student name: Jianchang (Robin) YU
-    student number: 160210191
-    student email: jyu205@myseneca.ca
-    date: 29th Nov. 2020-->
-
     <!DOCTYPE html>
     <html>
       <head>
@@ -32,16 +27,16 @@
         </header>
         <main>
             <div id="container_main">
-                <p style="font-size:20px; ">We value your feedback.</p>
-                <p style="font-size:16px; ">Please complete the form and help us improve our customer experience.</p>
+                <p style="font-size:22px; ">We value your feedback.</p>
                 <form id="formID" action="https://httpbin.org/post" method="POST">
-                        <label for="name">Name</label>
+                        <label for="username">Name</label>
                         <input
-                            id="name"
+                            id="username"
                             name="name"
                             type="text"
                             tabindex="1"
                             maxlength="30"
+                            required
                         >
 
                         <label for="email">Email Address</label>
@@ -51,9 +46,10 @@
                             autocomplete="email"
                             type="email"
                             tabindex="2"
+                            required
                         >
 
-                        <label for="address">Address</label>
+                        <label for="address">Address (optional)</label>
                         <input
                             id="address"
                             name="address"
@@ -68,6 +64,7 @@
                             type="text"
                             list="cities"
                             tabindex="4"
+                            required
                         >
                         <datalist id="cities">
                             <option value="Totonto"></option>
@@ -89,9 +86,14 @@
                             type="text"
                             tabindex="5"
                             maxlength="7"
+                            required
+                            placeholder="M1A 1A1"
+                            pattern="^[A-Za_z]\d[A-Za_z][ -]?\d[A-Za_z]\d$"
+                            title="Please give an valid postal code"
                         >
-                        <p>Choose your option</p>
-                        <div>
+
+                        <p>Your Message:</p>
+                        <div id="optionWrapper">
                             <label for="radiooption1">Question</label>
                             <input
                                 id="radiooption1"
@@ -117,17 +119,24 @@
                             >  
 
                             <input 
-                            id="odernumber"
+                            id="ordernumber"
                             name="ordernumber"
                             type="hidden"
+                            placeholder="Order Number"
                             > 
                         </div>  
                         <textarea id="message" name="message" rows="4" tableindex="6" placeholder="Please tell us what you want to share with us"></textarea>
                         <p></p>
                         <div>
-                          <input class="form_button" type="submit" value="subscribe">
+                          <input class="form_button" type="submit" value="submit">
                           <input class="form_button" type="reset" value="clear">
                         </div>
+                        <input 
+                        id="myname"
+                        name="myname"
+                        type="hidden"
+                        value="Jianchang (Robin) YU"
+                        > 
                 </form>
             </div>
         </main>
@@ -160,6 +169,7 @@
     
         <script src="js/kitchenware_data.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/contact_page.js"></script>
       </body>
     </html>
     

@@ -1,10 +1,3 @@
-/* Add any CSS you need to this file. */
-/* 
-    Student name: Jianchang (Robin) YU
-    student number: 160210191
-    student email: jyu205@myseneca.ca
-    date: 29th Nov. 2020
-*/
 
 html {
   height: 100%;
@@ -196,8 +189,8 @@ main{
   color: darkblue;
 
   font-weight: bold;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 8px;
+  margin-top: 20px;
 }
 
 
@@ -205,10 +198,10 @@ main{
   max-width:800px;
   border: 1px solid black;
   border-radius: 2%;
-  margin-top: 20px;
+  margin-top: 18px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 10px;
+  padding: 16px 10px;
 
   display:grid;
   grid-template-columns: 1fr 3fr;
@@ -232,6 +225,10 @@ textarea{
 input[type="submit"],input[type="reset"]{
   width:200px;
   margin-right: 20px;
+}
+
+#optionWrapper input{
+  margin-right:15px;
 }
 
 #block {
